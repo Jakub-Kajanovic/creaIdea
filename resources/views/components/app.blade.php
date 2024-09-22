@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{route('admin.form-submissions')}}">
                                 <i class="icon ph-bold ph-calendar-blank"></i>
                                 <span class="text">Schedules</span>
                             </a>

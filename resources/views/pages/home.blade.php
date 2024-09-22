@@ -194,7 +194,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612.3648189366845!2d18.936404177026414!3d49.09870947136584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714ff5b3adef8bf%3A0xbbf882a8eabbf049!2sSu%C4%8Dianska%202107%2F31%2C%20036%2001%20Martin-Priekopa!5e0!3m2!1ssk!2ssk!4v1726245321530!5m2!1ssk!2ssk"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form class="flex flex-col gap-4 lg:w-1/3 md:w-1/3 w-full" action="{{ route('form.submit') }}"
+        <form class="flex flex-col gap-4 lg:w-1/3 md:w-1/3 w-full" action="{{ route('form.submit-new') }}"
             method="POST">
             @csrf
             <h2>Napíšte mi</h2>
