@@ -3,7 +3,7 @@
         class="flex lg:flex-row md:flex-row flex-col items-center justify-between pt-20">
         <h1>od nápadov<br>
             k výkonu - váš<br> úspech v online</h1>
-        <img class="w-[32rem]" src="{{asset('images/gabiHero.webp')}}" alt="">
+        <img class="w-[32rem]" src="{{ asset('images/gabiHero.webp') }}" alt="">
     </section>
     <section id="about-me" data-aos="fade-up"
         class="flex lg:flex-row md:flex-row flex-col-reverse items-center justify-between border border-t-black border-b-black py-20">
@@ -107,10 +107,8 @@
             <div class="flex flex-col space-y-6 items-center lg:w-1/2 md:w-1/2 w-full">
                 <img class="w-32" src="{{ asset('images/brand.png') }}" alt="Crea Idea - Branding">
                 <h3>brand</h3>
-                <p class="text-balance text-center">Nové logo, redizajn, brandová stratégia, tone of voice, vizuálna
-                    identitu,
-                    všetko, čo bude definovať
-                    vás a vaše podnikanie</p>
+                <p class="text-balance text-center">Nové logo, redizajn, brandová stratégia, tone of voice, vizuálnu
+                    identitu, foto, video, jednoducho všetko, čo bude definovať vás a vaše podnikanie.</p>
             </div>
             <div class="flex flex-col space-y-6 items-center lg:w-1/2 md:w-1/2 w-full">
                 <img class="w-32" src="{{ asset('images/web.png') }}" alt="Crea Idea - Branding">
@@ -122,8 +120,9 @@
             <div class="flex flex-col space-y-6 items-center lg:w-1/2 md:w-1/2 w-full ">
                 <img class="w-32" src="{{ asset('images/production.png') }}" alt="Crea Idea - Branding">
                 <h3>produkcia</h3>
-                <p class="text-balance text-center">Nachystám scenár na fotenie, točenie, vyberiem priestor, urobím
-                    produktové fotografie, ktoré budú predávať</p>
+                <p class="text-balance text-center">Prichystám scenár na fotenie, video, vyberiem priestor, urobím
+                    produktové fotografie, ktoré budú predávať. Vyriešim dizajn printovej reklamy, letáky, billboardy,
+                    bigboardy.</p>
             </div>
             <div class="flex flex-col space-y-6 items-center lg:w-1/2 md:w-1/2 w-full">
                 <img class="w-32" src="{{ asset('images/ppc.png') }}" alt="Crea Idea - Branding">
@@ -148,20 +147,21 @@
                 <img class="cube gray" src="{{ asset('images/cubegray.svg') }}" alt="Small gray cube">
                 <img class="cube black" src="{{ asset('images/cubeblack.svg') }}" alt="Larger black cube">
                 <img class="cube brown" src="{{ asset('images/cubeBrown.svg') }}" alt="Brown cube black">
-                <img class="w-[62rem] lg:-mb-20 md:-mb-20 z-50" src="{{ asset('images/gabiBusiness.webp') }}" alt="Man point at text">
+                <img class="w-[62rem] lg:-mb-20 md:-mb-20 z-50" src="{{ asset('images/gabiBusiness.webp') }}"
+                    alt="Man point at text">
             </div>
             <div class="flex flex-col space-y-10 lg:w-1/2 md:w-1/2 w-full">
                 <h3 class="text-4xl">Prečo by ste si mali vybrať mňa</h3>
                 <ul class="why-me-list">
                     <li>Spolupracujem s nezávislou skupinou ľudí s bohatými skúsenosťami.</li>
-                    <li>Naša práca nás baví</li>
-                    <li>Sme spoľahliví.</li>
-                    <li>Zameriavame sa na výkon.</li>
-                    <li>Dôsledne počúvame vaše potreby.</li>
-                    <li>Vieme vám pomôcť s komplexným zastrešením marketingu.</li>
+                    <li>Moja práca ma baví a napĺňa.</li>
+                    <li>Som spoľahlivá a rýchlo reagujem na požiadavky klienta.</li>
+                    <li>Zameriavam sa na výkon - predaje a leady.</li>
+                    <li>Dôsledne počúvam vaše potreby.</li>
+                    <li>Viem vám pomôcť s komplexným zastrešením marketingu.</li>
                     <li>To všetko za ceny omnoho nižšie ako agentúry.</li>
                 </ul>
-                <x-button href="#contact">Konktujte nás</x-button>
+                <x-button href="#contact">Kontaktujte ma</x-button>
             </div>
         </div>
     </section>

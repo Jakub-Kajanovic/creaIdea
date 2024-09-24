@@ -39,7 +39,7 @@ body {
 }
 h1 {
     font-family: var(--headline-text);
-    font-size: 6.25rem;
+    font-size: 5rem;
     font-weight: 300;
     color: var(--text-color);
     text-transform: uppercase;
