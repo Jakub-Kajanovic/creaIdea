@@ -120,6 +120,9 @@ section{
 section#home{
   padding-bottom: 0px !important;
 }
+section#contact{
+  padding-top: 200px !important;
+}
 nav {
     display: flex;
     flex-direction: row;
