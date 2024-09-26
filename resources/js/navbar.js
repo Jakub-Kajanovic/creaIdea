@@ -13,35 +13,6 @@ Array.from(navLinks).forEach((li) =>
     }
   })
 );
-document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('a[href^="#"]');
-
-  links.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        // Dynamicky získaj výšku hlavičky
-        const header = document.querySelector('header');
-        const headerHeight = header ? header.offsetHeight : 0;
-
-        // Vypočítaj pozíciu cieľového prvku s ohľadom na posúvanie okna
-        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = targetPosition - headerHeight;
-
-        // Použi `scrollIntoView` s vyrovnávacím offsetom
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-});
-
 
 // toggle nav on click of hamburger menu icon
 hamburger.addEventListener("click", () => {
@@ -64,3 +35,24 @@ function handleScroll(){
   }
 }
 window.addEventListener("scroll", handleScroll);
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      // Získaj výšku headera
+      const headerOffset = document.querySelector('header').offsetHeight; 
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      // Skroluj na správne miesto
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+  });
+});

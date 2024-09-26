@@ -1,4 +1,4 @@
-<header id="header" class="transition-all duration-400">
+<header id="header" class="transition-all duration-400 block">
     <nav id="navbar" class="container mx-auto px-4 border-b border-black transition-all duration-400">
         <div class="logo">
             <a href="{{route('home')}}">

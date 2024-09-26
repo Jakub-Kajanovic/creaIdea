@@ -111,6 +111,15 @@ button:hover .button-arrow  {
   font-weight: lighter;
 }
 /* header */
+section{
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  scroll-margin-top: 200px;
+}
+section#home{
+  padding-bottom: 0px !important;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -299,6 +308,12 @@ nav ul li:hover {
   }
 
   @media screen and (max-width: 1000px) {
+    section{
+      position: relative;
+      padding-top: 140px;
+      padding-bottom: 90px;
+      scroll-margin-top: 140px;
+    }
     h1 {
       font-family: var(--headline-text);
       font-size: 3.25rem;
@@ -343,6 +358,7 @@ nav ul li:hover {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      z-index: 99999;
     }
     .nav-scroll {
       padding: 0 1rem;
