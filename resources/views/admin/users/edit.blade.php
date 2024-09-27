@@ -34,6 +34,22 @@
                         value="{{ old('email', $user->email) }}" required>
                 </div>
 
+                <!-- Nové heslo -->
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Nové heslo (nepovinné)</label>
+                    <div class="relative">
+                        <input type="password" name="password" id="password"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            placeholder="Zadajte nové heslo, ak ho chcete zmeniť">
+                        <!-- Ikona/tlačidlo na zobrazenie/skrývanie hesla -->
+                        <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5" onclick="togglePassword('password')">
+                            <svg class="h-5 w-5 text-gray-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm-3-7.5a9 9 0 017.481 13.155l-.323.571a9 9 0 01-15.319 0l-.323-.571A9 9 0 0112 4.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Admin -->
                 <div class="mb-6 flex items-center">
                     <!-- Skrytý input na odoslanie hodnoty false (0), ak checkbox nie je zakliknutý -->
@@ -54,4 +70,16 @@
             </form>
         </div>
     </div>
+
+    <script>
+        // Function to toggle password visibility
+        function togglePassword(fieldId) {
+            const field = document.getElementById(fieldId);
+            if (field.type === 'password') {
+                field.type = 'text';
+            } else {
+                field.type = 'password';
+            }
+        }
+    </script>
 </x-app>

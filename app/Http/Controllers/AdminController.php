@@ -44,7 +44,11 @@ class AdminController extends Controller
     $request->validate([
         'name' => 'required|string|max:255',
         'email' => 'required|string|email|max:255|unique:users,email,' . $user->id,
+        'password' => 'nullable|string|min:8',
     ]);
+    if ($request->filled('password')) {
+        $user->password = Hash::make($request->input('password'));
+    }
 
     $user->update([
         'name' => $request->input('name'),
