@@ -36,7 +36,7 @@
     <!-- End Google Tag Manager -->
 </head>
 
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col overflow-x-hidden">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNJ3CSC7" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
