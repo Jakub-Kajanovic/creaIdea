@@ -1,7 +1,7 @@
 <footer class="container mx-auto px-4 border-t border-black flex flex-col items-center">
     <h2 class="text-center pt-40">Tu ma zastihnete</h2>
     <div
-        class="lg:flex lg:flex-row md:flex-row flex-col lg:space-x-10 md:space-x-10 space-y-10 lg:space-y-0 md:space-y-0 justify-center py-10">
+        class="flex flex-wrap lg:grid  lg:grid-cols-4  gap-8 justify-center py-10">
         <x-footer-card>
             <img class="w-16" src="{{ asset('images/phone.png') }}" alt="">
             <h3>telefón</h3>
