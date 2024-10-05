@@ -105,13 +105,13 @@
             <h2 class="py-2">čo všetko viem pre vás urobiť?</h2>
             <div
                 class="flex lg:flex-row md:flex-row lg:flex-nowrap flex-wrap gap-2 justify-center py-10">
-                <div class="flex flex-col space-y-6 items-center w-1/2">
+                <div class="flex flex-col space-y-6 items-center lg:w-1/2 w-full">
                     <img class="w-32" src="{{ asset('images/brand.png') }}" alt="Crea Idea - Branding">
                     <h3>brand</h3>
                     <p class="text-balance text-center">Nové logo, redizajn, brandová stratégia, tone of voice, vizuálnu
                         identitu, foto, video, jednoducho všetko, čo bude definovať vás a vaše podnikanie.</p>
                 </div>
-                <div class="flex flex-col space-y-6 items-center w-1/2">
+                <div class="flex flex-col space-y-6 items-center lg:w-1/2 w-full">
                     <img class="w-32" src="{{ asset('images/web.png') }}" alt="Crea Idea - Branding">
                     <h3>web</h3>
                     <p class="text-balance text-center">Pripravím pre vás internetovú stránku, či e-shop podľa vašich
@@ -119,7 +119,7 @@
                         zákazníka ku
                         konverzii.</p>
                 </div>
-                <div class="flex flex-col space-y-6 items-center w-1/2 ">
+                <div class="flex flex-col space-y-6 items-center lg:w-1/2 w-full ">
                     <img class="w-32" src="{{ asset('images/production.png') }}" alt="Crea Idea - Branding">
                     <h3>produkcia</h3>
                     <p class="text-balance text-center">Prichystám scenár na fotenie, video, vyberiem priestor, urobím
@@ -127,7 +127,7 @@
                         billboardy,
                         bigboardy.</p>
                 </div>
-                <div class="flex flex-col space-y-6 items-center w-1/2">
+                <div class="flex flex-col space-y-6 items-center lg:w-1/2 w-full">
                     <img class="w-32" src="{{ asset('images/ppc.png') }}" alt="Crea Idea - Branding">
                     <h3>ppc kampane</h3>
                     <p class="text-balance text-center">Mojou silnou stránkou je tvorba a správa pay pre click kampaní
