@@ -6,10 +6,10 @@
         <img class="w-[32rem]" src="{{ asset('images/gabiHero.webp') }}" alt="">
     </section>
     <section id="about-me" data-aos="fade-up"
-        class="flex lg:flex-row md:flex-row flex-col-reverse items-center justify-between border border-t-black border-b-black py-20">
-        <img class="lg:w-1/2 md:w-1/2 w-full lg:pt-0 md:pt-0 pt-4" src="{{ asset('images/marketing.webp') }}"
+        class="flex lg:flex-row flex-col-reverse flex-wrap items-center justify-between border border-t-black border-b-black py-20">
+        <img class="lg:w-1/2 md:w-9/12 w-full lg:pt-0 pt-4" src="{{ asset('images/marketing.webp') }}"
             alt="Crea Idea marketing image, target picture for marketing">
-        <div class="flex flex-col lg:w-1/2 md:w-1/2 w-full space-y-4">
+        <div class="flex flex-col lg:w-1/2 w-full space-y-4">
             <h3>O mne</h3>
             <h2 class="text-balance">kreatívny marketing zameraný na úspech</h2>
             <p class="text-balance text-justify max-w-xl">Vitajte! Volám sa Gabi, marketingu sa venujem od roku 2008, a
